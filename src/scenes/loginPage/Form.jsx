@@ -61,7 +61,7 @@ const Form = () => {
     for (let value in values) {
       formData.append(value, values[value]);
     }
-    formData.append('picturePath', values.picture.name);
+    formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
         "http://localhost:3001/auth/register",
@@ -198,8 +198,8 @@ const Form = () => {
                         sx={{ "&:hover": { cursor: "pointer" } }}
                       >
                         <input {...getInputProps()} />
-                        {values.picture ? (
-                          <p>Add Pictre Here</p>
+                        {!values.picture ? (
+                          <p>Add Picture Here</p>
                         ) : (
                           <FlexBetween>
                             <Typography>{values.picture.name}</Typography>

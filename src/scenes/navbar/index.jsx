@@ -38,7 +38,8 @@ const Navbar = () => {
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  const fullName = `${user.firstName} ${user.lastName}`;
+//   const fullName = `${user.firstName} ${user.lastName}`;
+  const fullName = `Fake User`;
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
@@ -55,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          AlriuzBook
+          Sociopedia
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
@@ -121,7 +122,7 @@ const Navbar = () => {
       {/* MOBILE NAV */}
       {!isNonMobileScreens && isMobileMenuToggled && (
         <Box
-          positiion="fixed"
+          position="fixed"
           right="0"
           bottom="0"
           height="100%"
@@ -142,7 +143,7 @@ const Navbar = () => {
           {/* MENU ITEMS */}
           <FlexBetween
             display="flex"
-            flexDirection="Column"
+            flexDirection="column"
             justifyContent="center"
             alignItems="center"
             gap="3rem"
